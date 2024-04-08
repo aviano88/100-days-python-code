@@ -27,6 +27,8 @@ if height > 120:
         # If the age is between 12 and 18 (inclusive), assign the youth ticket price and update the bill
         print("Youth tickets are $7")
         bill += 7
+    elif 40 <= age <= 55:
+        print("Life is gonna be alright, enjoy this free ride")
     else:
         # For ages above 18, assign the adult ticket price and update the bill
         print("Adult tickets are $12")
@@ -140,9 +142,12 @@ elif size == "L":
 
 print(f"Your final bill is: ${bill}")
 
-<<<<<<< HEAD
 # exercise 6 - love calculator
+print("\n===============================")
+print("Love Calculator")
+print("===============================")
 print("The Love Calculator is calculating your score...")
+
 name1 = input("Whats is your name ?\n") # What is your name?
 name2 = input("What is your partner name?\n") # What is their name?
 
@@ -169,5 +174,56 @@ elif( score >= 40 and score <= 50):
   print(f"Your score is {score}, you are alright together.")
 else:
   print(f"Your score is {score}.")
-=======
->>>>>>> 3e0a649bd00fccd9ab021b48e008d649288db7d1
+
+print("\n\n")
+# day 3 final project - mini choice games
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+print("You are at a crossroads. where do you want to go?")
+direction = input("Type 'left' or 'right'\n")
+lower_direction = direction.lower()
+if lower_direction == "left":
+          action = input('you\'ve come to a lake. There is an island in the middle of the lake.Type "wait" to wait for a boat. Type "swim" to swim across. \n')
+          lower_action = action.lower()
+          if lower_action =="wait":
+
+            door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ")
+            lower_door = door.lower()
+            if lower_door == "red":
+                      print("It's a room full of fire. Game Over.")
+            elif lower_door == "yellow":
+                      print("You found the treasure! You Win!")
+            elif lower_door == "blue":
+                      print("Ther is a beast in the room. Game Over.")
+          else:
+                    print("You got attacked by an angry trout. Game Over.")
+          
+else:
+          print("Falls into a hole. Game Over.")
+          
